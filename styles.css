@@ -1,6 +1,50 @@
 @import 'bootstrap/dist/css/bootstrap.min.css';
 
+.container{
+  background-image:url(images/starwars.jpg);
+  background-repeat:no-repeat;
+  background-size:cover ;
+  
+}
+.navbar { 
+  display: flex; 
+  justify-content: space-between; 
+  align-items: center;
+  border-radius: 5px;
+  margin:2%,2%;
+ }
+.nav-links { 
+  display: flex; 
+  gap: 30px;
+  list-style: none;
+  }
+.nav-links a {
+   text-decoration:none; 
+  }
+h1{
+  color: greenyellow;
+  text-align:center;
+}
+.space{
+  color:navy;
+}
 h2{
   font-weight:700;
-  color:blue;
+  color:rgb(42, 58, 10);
+}
+div{
+  background-color: lab(86.44% -12.84 -5.41);
+  border-radius: 10px;
+  padding:1%;
+  color:navy;
+}
+nav{
+  color:aliceblue; 
+} 
+footer{
+  color:white;
+  position:absolute;
+  top: 85%;
+  right:0;
+  font-size: smaller;
 }

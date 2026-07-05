@@ -4,7 +4,6 @@ let film = document.getElementById('film')
 fetch(filmUrl).then(response => response.json()).then(json => {
   console.log(json)
   film.innerHTML =`<h3>${json.title}   Episode: ${json.episode_id} </h3><p>${json.director}</p> <p> ${json.opening_crawl}`
-  
 })
 
 let peopleUrl = 'https://swapi.dev/api/people/1/'
