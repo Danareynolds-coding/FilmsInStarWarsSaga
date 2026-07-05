@@ -1,13 +1,18 @@
 
-let filmUrl = 'https://swapi.dev/api/films'
+//document.addEventListener('DOMContentLoaded', APP.init);
+
+let filmUrl = 'https://swapi.dev/api/films/?page=1'
+
 let film = document.getElementById('film')
-fetch(filmUrl).then(response => response.json()).then(json => {
+fetch(filmUrl).then(response => { 
+  if(! response.ok) throw new Error(response.statusText);
+   return response.json();})
+   .then(json => {
   console.log(json)
   film.innerHTML =`<h3>${json.title}   Episode: ${json.episode_id} </h3><p>${json.director}</p> <p> ${json.opening_crawl}`}).catch(err => console.error(err))
+
   
-
-
-let peopleUrl = 'https://swapi.dev/api/people/'
+let peopleUrl = 'https://swapi.dev/api/people/?page=1'
 let people = document.getElementById('people')
 fetch(peopleUrl).then(response => response.json()).then(json => {
   console.log(json)
@@ -15,22 +20,22 @@ fetch(peopleUrl).then(response => response.json()).then(json => {
   ${json.homeworld}:${json.species}</p>FILMS:${json.films}<p>
     `}).catch(err => console.error(err))
 
-let planetsUrl = 'https://swapi.dev/api/planets/'
+let planetsUrl = 'https://swapi.dev/api/planets/?page=1'
 let planets = document.getElementById('planets')
 fetch(planetsUrl).then(response => response.json()).then(json => {
   console.log(json)
   planets.innerHTML =`<h3>${json.name} </h3><p>population : ${json.population}, climate:${json.climate} ${json.terrain}</p><p>Days:${json.orbital_period}-   Hours per day ${json.rotation_period}</p>Residents:${json.residents}</p>
   `}).catch(err => console.error(err))
 
-let speciesUrl = 'https://swapi.dev/api/species/'
+let speciesUrl = 'https://swapi.dev/api/species/?page=1/'
 let species = document.getElementById('species')
 fetch(speciesUrl).then(response => response.json()).then(json => {
   console.log(json)
   species.innerHTML =`<h3>${json.name} </h3><p>classification : ${json.classification}, 
-     designation:${json.designation}</p>`
+  designation:${json.designation}</p>`
 }).catch(err => console.error(err))
 
-let starshipsUrl = 'https://swapi.dev/api/starships/'
+let starshipsUrl = 'https://swapi.dev/api/starships/?page=1/'
 let starships = document.getElementById('starships')
 fetch(starshipsUrl).then(response => response.json()).then(json => {
   console.log(json)
@@ -40,7 +45,7 @@ fetch(starshipsUrl).then(response => response.json()).then(json => {
   `
 }).catch(err => console.error(err))
 
-let vehiclesUrl = 'https://swapi.dev/api/vehicles/'
+let vehiclesUrl = 'https://swapi.dev/api/vehicles/?page=1'
 let vehicles = document.getElementById('vehicles')
 fetch(vehiclesUrl).then(response => response.json()).then(json => {
   console.log(json) 
