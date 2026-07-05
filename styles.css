@@ -6,6 +6,21 @@
   background-size:cover ;
   
 }
+.space1{
+   background-image:url(images/space1.jpg);
+  background-repeat:repeat;
+  background-size:cover ;
+}
+.space2{
+  background-image:url(images/space2.jpg);
+  background-repeat:no-repeat;
+  background-size:cover ;
+}
+.space3{
+  background-image:url(images/space2.jpg);
+  background-repeat:no-repeat;
+  background-size:cover ;
+}
 .navbar { 
   display: flex; 
   justify-content: space-between; 
@@ -21,21 +36,26 @@
 .nav-links a {
    text-decoration:none; 
   }
+  p{
+    font-size:smaller;
+  }
 h1{
-  color: greenyellow;
+  color:chartreuse;
   text-align:center;
+  text-shadow: 0 0 8px rgba(56, 253, 2, 0.74);
 }
 .space{
-  color:navy;
+  color:rgb(225, 26, 189);
+  text-shadow: none;
 }
 h2{
   font-weight:700;
   color:rgb(42, 58, 10);
 }
 div{
-  background-color: lab(86.44% -12.84 -5.41);
+  background-color: lab(81.29% -24.93 -10.7);
   border-radius: 10px;
-  padding:1%;
+  padding:.5%;
   color:navy;
 }
 nav{
