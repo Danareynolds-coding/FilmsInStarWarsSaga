@@ -1,0 +1,6 @@
+@import 'bootstrap/dist/css/bootstrap.min.css';
+
+h2{
+  font-weight:700;
+  color:blue;
+}

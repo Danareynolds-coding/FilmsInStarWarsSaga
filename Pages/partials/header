@@ -1,0 +1,12 @@
+<header>
+    <h1>Star Wars Films</h1>
+    <nav>
+      <ul> 
+        <li>Films: <a href="#films">"https://swapi.dev/api/films/"</a></li>
+        <li>People:"https://swapi.dev/api/people/"</li>
+        <li>Planets:https://swapi.dev/api/planets</li>
+        <li>Species: "https://swapi.dev/api/starships/"</li>
+        <li>Vehicles: "https://swapi.dev/api/vehicles/"</li>
+      </ul>
+    </nav>
+  </header>
