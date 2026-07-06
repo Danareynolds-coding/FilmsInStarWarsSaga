@@ -1,5 +1,7 @@
 # FilmsInStarWarsSaga
 App to display Star Wars Film Information on Cards
+#
+FAILURE COULD ONLY GET Single to work
 
 ####Requirements: Basic HTML, CSS and JS (I wanted to make sure I had something to turn if more ambitious project ran into problems and I was unable to meet deadline.)
 ##CONTENT:
